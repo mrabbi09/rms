@@ -1,38 +1,159 @@
-.App {
+/* General styles */
+:root {
+  --header-height: 80px; /* Define a fixed header height */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: hsl(152, 31%, 35%);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed; /* Make the header fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height); /* Set a fixed height for the header */
+  z-index: 1000; /* Ensure the header stays on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-list {
+  list-style-type: none;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.logo {
+  width: 150px; /* Adjust the width to a proper size */
+  height: auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Main content container */
+.main-content {
+  margin-top: var(--header-height); /* Add margin to push content below the header */
+}
+
+/* Hero section */
+.hero {
+  background: url('./') no-repeat center center/cover;
+  color: #47743e;
+  padding: 100px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-title {
+  font-size: 3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-text {
+  font-size: 1.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About section */
+.about {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Services section */
+.services {
+  background-color: #4abda4;
+  padding: 60px 0;
+}
+
+.service-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 23%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.service-card a.btn {
+  margin-top: 15px;
+}
+
+/* Contact section */
+.contact {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact .btn {
+  margin-top: 20px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
