@@ -7,7 +7,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 2rem auto;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
@@ -38,10 +38,24 @@
   gap: 1.5rem;
 }
 
+.section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .formGroup label {
@@ -49,7 +63,9 @@
   color: #fff;
 }
 
-.formGroup select {
+.formGroup input,
+.formGroup select,
+.formGroup .datePicker {
   padding: 0.8rem;
   border: none;
   border-radius: 8px;
@@ -59,7 +75,9 @@
   transition: background 0.3s, box-shadow 0.3s;
 }
 
-.formGroup select:focus {
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup .datePicker:focus {
   background: rgba(255, 255, 255, 1);
   box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
 }
@@ -87,22 +105,6 @@
 }
 
 /* Rent Calculation */
-.calculateButton {
-  padding: 0.8rem;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.calculateButton:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
-}
-
 .rentDisplay {
   font-size: 1.2rem;
   color: #fff;
@@ -126,13 +128,22 @@
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
 }
 
+/* Error Messages */
+.error {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
   .bookingContainer {
     padding: 1.5rem;
   }
 
-  .formGroup select {
+  .formGroup input,
+  .formGroup select,
+  .formGroup .datePicker {
     width: 100%;
   }
 }
