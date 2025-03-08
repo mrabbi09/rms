@@ -1,0 +1,138 @@
+/* Container Styles */
+.bookingContainer {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bookingContainer h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.formGroup select {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.formGroup select:focus {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+}
+
+/* Features List */
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featureItem input {
+  cursor: pointer;
+}
+
+.featureItem label {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Rent Calculation */
+.calculateButton {
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.calculateButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.rentDisplay {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* Book Button */
+.bookButton {
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bookButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .bookingContainer {
+    padding: 1.5rem;
+  }
+
+  .formGroup select {
+    width: 100%;
+  }
+}

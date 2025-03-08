@@ -71,7 +71,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
-    background-color: #16a085;
+    background-color: #114137;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -80,7 +80,7 @@
   }
   
   .button:hover {
-    background-color: #1abc9c;
+    background-color: #275249;
     transform: translateY(-3px);
   }
   

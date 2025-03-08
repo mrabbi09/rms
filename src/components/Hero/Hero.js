@@ -9,10 +9,10 @@ const Hero = () => {
           Welcome to <span className="highlight">RMS (Rapid Med-Tech System)</span>
         </h1>
         <p className="hero-description animate-text">
-          A <span className="highlight">cutting-edge</span> healthcare platform providing seamless 
-          <span className="highlight"> hospital management</span>, 
-          <span className="highlight"> ambulance booking</span>, 
-          <span className="highlight"> AI-powered prescription matching</span>, and an efficient 
+           <span className="highlight">A cutting-edge healthcare platform providing seamless </span>
+          <span className="highlight"> hospital management,</span>, 
+          <span className="highlight"> ambulance booking,</span>, 
+          <span className="highlight"> AI-powered prescription matching, and an efficient </span>
           <span className="highlight"> blood donor system</span>.
         </p>
       </div>

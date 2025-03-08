@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo-container">
-          <img src="/assets/hero-img.png" alt="Logo" className="logo" />
+          <img src="/assets/logo.jpeg" alt="Logo" className="logo" />
         </div>
 
         <div className="menu-options">
@@ -107,7 +107,7 @@ const Header = () => {
               {activeDropdown === 'login' && (
                 <ul className="dropdown">
                   <li><Link to="/user-login">Login As User</Link></li>
-                  <li><Link to="/admin-login">Login As Doctor</Link></li>
+                  <li><Link to="/admin-login">Login As Admin</Link></li>
                   <li><Link to="/user-register">Register As User</Link></li>
                   <li><Link to="/admin-register">Register As Admin</Link></li>
                 </ul>
